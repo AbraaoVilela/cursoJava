@@ -1,31 +1,24 @@
 package BancoCurso;
 
 public class CriaConta {
+
     public static void main(String[] args) {
 
-        Conta primeiraConta = new Conta();
-        primeiraConta.saldo = 200;
-        System.out.println(primeiraConta.saldo);
-        primeiraConta.titular = "Rafael";
-        System.out.println(primeiraConta.titular);
+        Cliente cliente1 = new Cliente("Rafael Junio","42590038879", 30, "12345789");
 
-        primeiraConta.saldo += 100;
-        System.out.println(primeiraConta.saldo);
+        Cliente cliente2 = new Cliente("Talita Linda","44857167832", 23, "12457896");
 
-        System.out.println(primeiraConta.agencia);
+        Cliente cliente3 = new Cliente("Angel Correa","47857154789", 35, "99999999");
 
+        System.out.println(" O Nome do Cliente é: " + cliente1.getNome());
+        System.out.println(" O Nome do Cliente é: " + cliente2.getNome());
+        System.out.println(" O Nome do Cliente é: " + cliente3.getNome());
 
-
-
-        Conta segundaConta = new Conta();
-        segundaConta.saldo = 500;
-        segundaConta.titular = "Bruno";
-
-        System.out.println("O Nome do Titular é: " + segundaConta.titular + ", e o valor do seu saldo é: " + segundaConta.saldo);
-
+        Conta contaCliente1 = new Conta();
+        contaCliente1.titular = cliente1;
+        System.out.println(contaCliente1.getTitular().getNome());
 
 
 
     }
-
 }
