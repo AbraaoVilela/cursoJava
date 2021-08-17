@@ -24,7 +24,9 @@ public class Metodos {
 
         System.out.println("O Saldo da Conta1 : " + conta1.saldo);
 
-
+        Cliente cliente1 = new Cliente("Rafael", "123456789", 35, "12457895");
+        conta1.titular = cliente1;
+        System.out.println(conta1.getTitular().getNome());
 
     }
 }

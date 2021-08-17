@@ -14,9 +14,10 @@ public class CriaConta {
         System.out.println(" O Nome do Cliente é: " + cliente2.getNome());
         System.out.println(" O Nome do Cliente é: " + cliente3.getNome());
 
-        Conta contaCliente1 = new Conta();
-        contaCliente1.titular = cliente1;
-        System.out.println(contaCliente1.getTitular().getNome());
+
+
+
+
 
 
 
